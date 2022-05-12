@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset = 'UTF-8'>  
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+   <title> My Zoo App  </title>
+</head>
+    
+    
+<body>
+    <div class="login">
+    
+    <h1> Zoo Animals Classification </h1>
+    <form action="{{ url_for('a')}}"method="post" class="scroll">
+    <label>hair</label>
+    <input type = "text" name = "hair" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>feathers</label>
+    <input type="text" name="feathers" placeholder= '1=True/0=False' required="required"/>
+    <br>
+    <label>eggs</label>
+    <input type="text" name="eggs" placeholder= '1=True/0=False' required="required"/>
+    <br>
+    <label>milk</label>
+    <input type="text" name="milk" placeholder= '1=True/0=False' required="required"/ >
+    <br>
+    <label>airborne</label>
+    <input type="text" name="airborne" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>aquatic</label>
+    <input type="text" name="aquatic" placeholder='1=True/0=False' required="required"/>
+    <br>
+    <label>predator</label>
+    <input type="text" name="predator" placeholder= '1=True/0=False' required="required"/>
+    <br>
+    <label>toothed</label>
+    <input type="text" name="toothed" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>backbone</label>
+    <input type="text" name="backbone" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>breathes</label>
+    <input type="text" name="breathes" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>venomous</label>
+    <input type="text" name="venomous" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>fins</label>
+    <input type="text" name="fins" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>legs</label>
+    <input type="text" name="legs" placeholder='no.of.legs'  required="required"/>
+    <br>
+    <label>tail</label>
+    <input type = "text" name = "tail" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>domestic</label>
+    <input type="text" name="domestic" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    <label>catsize</label>
+    <input type="text" name="catsize" placeholder='1=True/0=False'  required="required"/>
+    <br>
+    
+     <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    
+    
+     <br>
+   {{ prediction_text }}
+
+ </div>
+ 
+</body>
+
+
+
+
+
+
+</html>
